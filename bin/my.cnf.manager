@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+let lastArgument = process.argv[process.argv.length - 1]
+require('../index').myCnfManager({
+  environment: lastArgument === __filename ? 'default' : lastArgument
+})

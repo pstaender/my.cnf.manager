@@ -1,0 +1,14 @@
+{
+  "name": "my.cnf.manager",
+  "version": "1.0.0",
+  "description": "handles multiple mysql settings in one user enviromment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Philipp Staender",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^12.0.7"
+  }
+}
