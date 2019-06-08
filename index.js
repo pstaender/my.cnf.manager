@@ -6,14 +6,14 @@ var fs = require("fs");
 var filename = path.resolve(os_1.homedir + "/.my.cnf.clients");
 var myCnfFile = path.resolve(os_1.homedir + "/.my.cnf");
 var DEFAULT_ENVIRONMENT = 'default';
-function myCnfManager(options) {
+function switchMyCnf(options) {
     if (options === void 0) { options = {
         environment: DEFAULT_ENVIRONMENT
     }; }
     var environment = options.environment;
     var environmentFound = false;
     var collectLines = false;
-    var lines = ['[client]', ''];
+    var lines = ['[client]'];
     var values = {};
     var usingDefaultEnvironment = environment === DEFAULT_ENVIRONMENT;
     fs.readFileSync(filename)
@@ -46,5 +46,5 @@ function myCnfManager(options) {
         process.exit(1);
     }
 }
-exports.myCnfManager = myCnfManager;
+exports.switchMyCnf = switchMyCnf;
 //# sourceMappingURL=index.js.map

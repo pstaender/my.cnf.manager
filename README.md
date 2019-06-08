@@ -2,6 +2,12 @@
 
 ## MyCnfManager enables handling multiple my.cnf
 
+## Install
+
+```sh
+  $ npm install -g my.cnf.manager
+```
+
 ### Usage
 
 Just create a `~/.my.cnf.clients` file containing all possible environments, e.g.:
@@ -30,9 +36,9 @@ Now you can switch between different clients with `my.cnf.manager name_of_enviro
     host=127.0.0.1
     port=3306
     password=secret
-  $ my.cnf.manager
-    switched .my.cnf to default
 ```
+
+You can also switch to the default client anytime by just typing `my.cnf.manager`.
 
 ### License
 

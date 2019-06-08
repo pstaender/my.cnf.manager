@@ -1,13 +1,20 @@
 {
   "name": "my.cnf.manager",
-  "version": "1.0.0",
-  "description": "handles multiple mysql settings in one user enviromment",
+  "version": "0.0.1",
+  "description": "Handles multiple mysql settings in one user enviromment and allows switching in between with on command",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "my.cnf.manager": "bin/my.cnf.manager"
+  },
   "author": "Philipp Staender",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pstaender/my.cnf.manager.git"
+  },
   "dependencies": {
     "@types/node": "^12.0.7"
   }

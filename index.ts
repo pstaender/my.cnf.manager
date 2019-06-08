@@ -11,7 +11,7 @@ interface Options {
   environment: string
 }
 
-export function myCnfManager(
+export function switchMyCnf(
   options: Options = {
     environment: DEFAULT_ENVIRONMENT
   }
@@ -20,7 +20,7 @@ export function myCnfManager(
 
   let environmentFound = false
   let collectLines = false
-  let lines = ['[client]', '']
+  let lines = ['[client]']
   let values: any = {}
   let usingDefaultEnvironment = environment === DEFAULT_ENVIRONMENT
 
